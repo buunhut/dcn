@@ -63,7 +63,7 @@ const Products = () => {
           return (
             <div key={index} className="productItem">
               <div className="img">
-                <img src={`/img/${img}`} alt="" />
+                <img src={`/img/${img === "" ? "noImg.png" : img}`} alt="" />
               </div>
               <h3>{productName.toUpperCase()}</h3>
               <p>{price.toLocaleString()}</p>
