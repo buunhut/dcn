@@ -15,6 +15,9 @@ import HomePage from "./pages/HomePage";
 import DangNhap from "./pages/DangNhap";
 import Products from "./pages/Products";
 import Index from "./pages/Index";
+import Partners from "./pages/Partners";
+import ContactUs from "./pages/ContactUs";
+import Solutions from "./pages/Solutions";
 
 const App = () => {
   return (
@@ -24,6 +27,9 @@ const App = () => {
           <Route index element={<Index />} />
           <Route path="log-in" element={<DangNhap />} />
           <Route path="products" element={<Products />} />
+          <Route path="solutions" element={<Solutions />} />
+          <Route path="partners" element={<Partners />} />
+          <Route path="contact-us" element={<ContactUs />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -13,8 +13,8 @@ const Footer = () => {
         <a href="tel:+84919984877"> 0919984877</a>
       </p>
       <p>
-        <i className="fa-solid fa-location-dot"></i> Quận Tân Bình, Thành Phố Hồ
-        Chí Minh, Việt Nam
+        <i className="fa-solid fa-location-dot"></i> Quận Tân Bình, TP Hồ Chí
+        Minh, Việt Nam
       </p>
     </div>
   );

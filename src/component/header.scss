@@ -4,8 +4,6 @@
     top: 0;
     z-index: 1000;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    // display: flex;
-    // align-items: center;
 
     .container {
         height: 60px;
@@ -13,6 +11,17 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        a {
+            text-decoration: none;
+            color: rgb(60, 60, 60);
+            transition: all .3s;
+
+            &:hover {
+                color: orangered;
+            }
+        }
+
 
         .logo {
 
@@ -226,125 +235,61 @@
             }
         }
     }
+
+
+}
+
+#smallHeader {
+    display: none;
 }
 
 @media screen and (max-width: 768px) {
-
     #header {
+        display: none;
+    }
+
+    #smallHeader {
+        display: block;
+        background-color: orangered;
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+            padding: 0 40px;
+
+        }
 
         .container {
-            flex-direction: column;
-
-            .logo {
-                // display: none;
-
-                h2 {
-                    font-weight: bold;
-                    color: orangered;
-                }
-
-                p {
-                    color: black;
-                    font-size: 14px;
-                    font-weight: bold;
-                    margin-top: -5px;
-                }
-            }
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            z-index: 1002;
+            background-color: whitesmoke;
+            // padding: 30px;
+            width: 0;
+            overflow: hidden;
+            transition: all .3s;
 
             .menu {
-                // display: none;
-
-                ul {
-                    flex-direction: column;
-
-                    li {
-                        cursor: pointer;
-                        list-style: none;
-                        font-size: 18px;
-                        font-weight: bold;
-                        transition: all .3s;
-
-                        i {
-                            color: silver;
-                            font-size: 14px;
-                            transition: all .5s;
-                            // font-weight: 300;
-                        }
-
-
-                        &:hover {
-                            color: orangered;
-
-                            i {
-                                transform: rotate(-180deg);
-                            }
-
-                        }
-                    }
-                }
+                padding: 30px
             }
 
             .menuExtra {
-                display: flex;
-                gap: 30px;
-                align-items: center;
-                justify-content: space-between;
-
-                .search {
-                    position: relative;
-                    width: 100%;
-
-                    input {
-                        height: 34px;
-                        padding: 0 5px;
-                        font-size: 16px;
-                        border-radius: 10px;
-                        border: 1px solid silver;
-                        outline: none;
-                        width: 100%;
-
-                    }
-
-                    i {
-                        position: absolute;
-                        top: 8px;
-                        right: 8px;
-                        color: silver;
-                        font-size: 18px;
-                    }
-                }
-
-                .langues {
-                    // display: none;
-
-                    i {
-                        color: silver;
-                        font-size: 14px;
-
-                    }
-                }
-
-                .login {
-                    // display: none;
-                    align-items: center;
-                    gap: 10px;
-
-                    .icon {
-                        height: 40px;
-                        width: 40px;
-                        text-align: center;
-                        line-height: 40px;
-                        background-color: silver;
-                        border-radius: 50%;
-
-                        i {
-                            color: white;
-                            font-size: 18px;
-                        }
-                    }
-                }
+                padding: 30px
             }
+
+            .close {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            }
+
+
         }
     }
+
 
 }

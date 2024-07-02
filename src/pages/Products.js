@@ -55,22 +55,18 @@ const Products = () => {
 
   return (
     <div className="content">
-      {id}
-      <div className="productContent">
-        {listProducts?.map((item, index) => {
-          const { productName, price, img, detail } = item;
-          console.log(img);
-          return (
-            <div key={index} className="productItem">
-              <div className="img">
-                <img src={`/img/${img === "" ? "noImg.png" : img}`} alt="" />
-              </div>
-              <h3>{productName.toUpperCase()}</h3>
-              <p>{price.toLocaleString()}</p>
+      {listProducts?.map((item, index) => {
+        const { productName, price, img, detail } = item;
+        return (
+          <div key={index} className="productItem">
+            <div className="img">
+              <img src={`/img/${img === "" ? "noImg.png" : img}`} alt="" />
             </div>
-          );
-        })}
-      </div>
+            <h3>{productName.toUpperCase()}</h3>
+            <p>{price.toLocaleString()}đ</p>
+          </div>
+        );
+      })}
     </div>
   );
 };
