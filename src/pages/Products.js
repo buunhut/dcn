@@ -55,7 +55,7 @@ const Products = () => {
 
   return (
     <div className="content">
-      {/* Show products of {id} */}
+      {id}
       <div className="productContent">
         {listProducts?.map((item, index) => {
           const { productName, price, img, detail } = item;

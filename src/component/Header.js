@@ -9,20 +9,23 @@ const Header = () => {
   const handleHomePage = () => {
     navigate("/");
   };
+  const handleProductPage = () => {
+    navigate("/products");
+  };
   return (
     <div id="header">
       <div className="container">
         <div className="logo" onClick={handleHomePage}>
-          <a href="">
-            <h2>DCN</h2>
-            <p>Vietnam</p>
-          </a>
+          {/* <h1>DCN</h1> */}
+          {/* <p>Vietnam</p> */}
+          <img src="./img/logo.png" alt="" />
         </div>
         <div className="menu">
           <ul className="menuContent">
-            <li className="menuItem">
-              Products <i className="fa-solid fa-angle-down"></i>
-              <div className="dropDown">
+            <li className="menuItem" onClick={handleProductPage}>
+              Products
+              {/* <i className="fa-solid fa-angle-down"></i> */}
+              {/* <div className="dropDown">
                 <ul className="ulDropDown">
                   <li className="liDropDown">
                     <NavLink to="/products/cloud-platform">
@@ -57,7 +60,7 @@ const Header = () => {
                     <NavLink to="/products/server">Server</NavLink>
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </li>
             <li className="menuItem">
               Solutions <i className="fa-solid fa-angle-down"></i>
@@ -148,14 +151,14 @@ const Header = () => {
             <i className="fa-solid fa-magnifying-glass"></i>
           </div>
           <div className="langues">
-            Tiếng Anh <i className="fa-solid fa-angle-down"></i>
+            English <i className="fa-solid fa-angle-down"></i>
           </div>
-          <div className="login">
+          {/* <div className="login">
             <div className="icon" onClick={handleDangNhap}>
               <i class="fa-solid fa-user"></i>
             </div>
             Chưa đăng nhập
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

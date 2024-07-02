@@ -23,7 +23,7 @@ const App = () => {
         <Route path="/" element={<HomePage />}>
           <Route index element={<Index />} />
           <Route path="log-in" element={<DangNhap />} />
-          <Route path="products/:id" element={<Products />} />
+          <Route path="products" element={<Products />} />
         </Route>
       </Routes>
     </BrowserRouter>

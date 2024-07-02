@@ -11,8 +11,8 @@ const Index = () => {
       <Banner />
       <Advancon />
       <Caterogy />
-      <News />
-      <AboutUs />
+      {/* <News />
+      <AboutUs /> */}
     </div>
   );
 };
