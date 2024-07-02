@@ -1,0 +1,40 @@
+#category {
+    margin-top: 3px;
+    // height: 400px;
+    display: flex;
+
+    .leftContent {
+        // width: 400px;
+        background-color: whitesmoke;
+        padding: 30px 50px;
+
+        h1 {
+            color: orangered;
+        }
+
+        ul {
+            li {
+                color: rgb(60, 60, 60);
+                list-style: none;
+                margin-top: 20px;
+                font-size: 18px;
+                transition: all .3s;
+                cursor: pointer;
+
+
+                &:hover {
+                    color: orangered;
+                }
+            }
+        }
+    }
+
+    .mainContent {
+        padding: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        font-size: 100px;
+    }
+}

@@ -1,0 +1,78 @@
+#contactItem {
+    // width: 50px;
+    background-color: transparent;
+    position: fixed;
+    right: 5px;
+    top: 50%;
+    z-index: 999;
+    transform: translateY(-50%);
+    padding: 5px;
+    border-radius: 40px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+
+    .contactWrap {
+        // border: 1px solid orangered;
+        border-radius: 40px;
+
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+
+        .contactContentItem {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: rgb(236, 236, 236);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all .3s;
+
+            &:hover {
+                background-color: orangered;
+
+                i {
+                    color: white;
+                }
+            }
+
+            i {
+                color: orangered;
+                font-size: 18px;
+            }
+
+        }
+
+        .contactContentButton {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: rgb(236, 236, 236);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all .3s;
+
+            &:hover {
+                background-color: orangered;
+
+                i {
+                    color: white;
+                }
+            }
+
+
+            i {
+                color: orangered;
+                font-size: 14px;
+            }
+
+        }
+
+    }
+}

@@ -1,0 +1,50 @@
+#advancon {
+    background-color: whitesmoke;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+
+
+    .advanIconWrap {
+
+
+
+
+        cursor: pointer;
+
+        .advanIcon {
+            width: 160px;
+            height: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all .5s;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+
+        }
+
+        h3 {
+            margin-top: 20px;
+            color: rgb(60, 60, 60);
+            text-align: center;
+            transition: all .3s;
+        }
+
+        &:hover {
+            .advanIcon {
+                scale: 1.2;
+            }
+
+            h3 {
+                color: orangered;
+            }
+        }
+    }
+
+}
