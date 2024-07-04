@@ -1,7 +1,10 @@
 import React from "react";
 import "./caterogy.scss";
+import { useSelector } from "react-redux";
+import ProductItem from "./ProductItem";
 
 const Caterogy = () => {
+  const { listProducts } = useSelector((state) => state.dataSlice);
   return (
     <div id="category">
       <div className="leftContent">
@@ -17,7 +20,13 @@ const Caterogy = () => {
           <li>Server</li>
         </ul>
       </div>
-      <div className="mainContent">Products slider</div>
+      <div className="mainContent">
+        <div className="slider">
+          {listProducts?.map((item, index) => (
+            <ProductItem item={item} key={index} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
