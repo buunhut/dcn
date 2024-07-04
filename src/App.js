@@ -18,6 +18,7 @@ import Index from "./pages/Index";
 import Partners from "./pages/Partners";
 import ContactUs from "./pages/ContactUs";
 import Solutions from "./pages/Solutions";
+import ProductDetail from "./pages/ProductDetail";
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
           <Route index element={<Index />} />
           <Route path="log-in" element={<DangNhap />} />
           <Route path="products" element={<Products />} />
+          <Route path="product-detail/:id" element={<ProductDetail />} />
           <Route path="solutions" element={<Solutions />} />
           <Route path="partners" element={<Partners />} />
           <Route path="contact-us" element={<ContactUs />} />
