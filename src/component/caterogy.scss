@@ -94,7 +94,8 @@
 
 
         .leftContent {
-            padding: 5px 10px;
+            padding: 10px;
+            width: 100%;
 
 
 
@@ -136,12 +137,11 @@
         }
 
         .mainContent {
-            padding: 5px;
+            padding: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
             width: 100%;
-            font-size: 100px;
         }
     }
 
