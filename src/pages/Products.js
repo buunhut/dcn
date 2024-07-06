@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 import ProductItem from "../component/ProductItem";
 
 const Products = () => {
+ 
   const { listProducts } = useSelector((state) => state.dataSlice);
   return (
     <div className="content">

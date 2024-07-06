@@ -7,12 +7,10 @@
     .text {
         h3 {
             margin: 20px 0 0;
-            font-size: 16px;
         }
 
         h1 {
             margin: 20px 0 0;
-            font-size: 18px;
 
 
         }
@@ -33,6 +31,34 @@
 
             i {
                 font-size: 16px;
+            }
+        }
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid silver;
+
+        tbody {
+            tr {
+                td {
+                    border: 1px solid silver;
+                    padding: 5px 10px;
+
+                    &:first-child {
+                        width: 160px;
+                        font-weight: 500;
+                        background-color: aliceblue;
+                    }
+
+                    ul {
+                        margin-left: 15px;
+
+                        li {}
+                    }
+
+                }
             }
         }
     }
